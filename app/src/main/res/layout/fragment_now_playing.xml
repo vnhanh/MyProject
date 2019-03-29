@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment_now_playing.NowPlayingFragment">
+
+    <Button
+        android:id="@+id/btn_view_time_table"
+        android:text="@string/btn_title_view_time_table"
+        android:background="@drawable/bg_rectangle_blue_corner_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/marginx2"
+        android:layout_marginEnd="@dimen/marginx2"
+        android:layout_marginBottom="@dimen/marginx2"
+        android:padding="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tv_now_playing_title"
+        android:text="@string/tv_title_now_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/video_player_now_playing"
+        android:layout_marginTop="@dimen/marginx2"/>
+
+    <TextView
+        android:id="@+id/tv_video_now_playing_name"
+        android:text="BASIC MEDITATION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_now_playing_title"
+        app:layout_constraintStart_toStartOf="@id/video_player_now_playing"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tv_upcoming_title"
+        android:text="@string/tv_title_upcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/surface_video_upcoming"
+        android:layout_marginTop="@dimen/marginx2"/>
+
+    <TextView
+        android:id="@+id/tv_upcoming_video_name"
+        android:text="STRECH BASIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_now_playing_title"
+        app:layout_constraintStart_toStartOf="@id/surface_video_upcoming"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_player_now_playing"
+        app:controller_layout_id="@layout/custom_exo_player_controls"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_video_now_playing_name"
+        app:layout_constraintBottom_toTopOf="@+id/btn_view_time_table"
+        android:layout_marginLeft="@dimen/marginx2"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginStart="@dimen/marginx2"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/marginx2"/>
+
+    <ImageView
+        android:id="@+id/thumbnail_now_playing"
+        android:contentDescription="@string/content_desc_thumbnail_video_now_playing"
+        android:background="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/video_player_now_playing"
+        app:layout_constraintEnd_toEndOf="@id/video_player_now_playing"
+        app:layout_constraintTop_toTopOf="@+id/video_player_now_playing"
+        app:layout_constraintBottom_toBottomOf="@+id/video_player_now_playing"/>
+
+    <ImageView
+        android:id="@+id/btn_volume"
+        app:srcCompat="@drawable/ic_volume_up_black_36dp"
+        android:contentDescription="@string/content_desc_volume_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/video_player_now_playing"
+        app:layout_constraintEnd_toEndOf="@id/video_player_now_playing"
+        android:layout_marginBottom="@dimen/marginx2"
+        android:layout_marginRight="@dimen/marginx2"
+        android:padding="@dimen/margin"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_volume"
+        android:rotation="270"
+        android:visibility="gone"
+        android:progress="50"
+        android:max="100"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar_thumb"
+        android:layout_width="@dimen/height_frag_control_seekbar_volume"
+        android:layout_height="@dimen/height_frag_control_seekbar_volume"
+        app:layout_constraintBottom_toTopOf="@id/btn_volume"
+        app:layout_constraintStart_toStartOf="@+id/btn_volume"
+        app:layout_constraintEnd_toEndOf="@+id/btn_volume"/>
+
+    <ProgressBar
+        android:id="@+id/prg_bar_video_now_playing"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/video_player_now_playing"
+        app:layout_constraintEnd_toEndOf="@id/video_player_now_playing"
+        app:layout_constraintTop_toTopOf="@id/video_player_now_playing"
+        app:layout_constraintBottom_toBottomOf="@id/video_player_now_playing"/>
+
+    <ImageView
+        android:id="@+id/surface_video_upcoming"
+        android:contentDescription="@string/content_desc_thumbnail_video_upcoming"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/guideline_center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_upcoming_video_name"
+        app:layout_constraintBottom_toTopOf="@+id/btn_view_time_table"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/marginx2"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/marginx2"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/marginx2"/>
+
+</android.support.constraint.ConstraintLayout>

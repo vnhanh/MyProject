@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--USE FOR TIME TABLE-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/marginx2"
+    android:layout_marginRight="@dimen/marginx2"
+    android:paddingTop="@dimen/margin"
+    android:paddingBottom="@dimen/margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_time_scheduler"
+        android:background="@drawable/bg_circle_gray_border_dark"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="@dimen/size_scheduler_timer_view"
+        android:layout_height="@dimen/size_scheduler_timer_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_avatar_video"
+        android:background="@drawable/bg_rectangle_white_border_black_corner"
+        android:contentDescription="@string/content_desc_thumbnail_video_scheduler"
+        android:layout_width="@dimen/width_scheduler_video_image"
+        android:layout_height="@dimen/height_scheduler_video_image"
+        app:layout_constraintStart_toEndOf="@id/tv_time_scheduler"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/marginx2"
+        android:layout_marginStart="@dimen/marginx2"/>
+
+    <TextView
+        android:id="@+id/tv_video_title"
+        android:textSize="@dimen/text_size_scheduler_video_title"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img_avatar_video"
+        app:layout_constraintTop_toTopOf="@id/img_avatar_video"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"/>
+
+    <!--DURATION-->
+    <TextView
+        android:id="@+id/tv_title_video_duration"
+        android:text="@string/title_duration_normal"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_video_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_video_title"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tv_content_video_duration"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_title_video_duration"
+        app:layout_constraintTop_toTopOf="@id/tv_title_video_duration"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_video_duration"
+        android:layout_marginLeft="@dimen/margin"/>
+
+    <!--LEVEL-->
+    <TextView
+        android:id="@+id/tv_title_video_level"
+        android:text="@string/title_level_normal"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title_video_duration"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_video_duration"
+        android:layout_marginRight="@dimen/width_scheduler_viewholder_right_column"/>
+
+    <TextView
+        android:id="@+id/tv_content_video_level"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_title_video_level"
+        app:layout_constraintTop_toTopOf="@id/tv_title_video_duration"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_video_duration"
+        android:layout_marginLeft="@dimen/margin"/>
+
+    <!--INSTRUCTOR-->
+    <TextView
+        android:id="@+id/tv_title_video_instructor"
+        android:text="@string/title_instructor_normal"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_video_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_video_duration"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tv_content_video_instructor"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_title_video_instructor"
+        app:layout_constraintTop_toTopOf="@id/tv_title_video_instructor"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_video_instructor"
+        android:layout_marginLeft="@dimen/margin"/>
+
+    <!--COLLECTION-->
+    <TextView
+        android:id="@+id/tv_title_video_collection"
+        android:text="@string/title_collection_normal"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_title_video_instructor"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_video_instructor"
+        app:layout_constraintStart_toStartOf="@id/tv_title_video_level"/>
+
+    <TextView
+        android:id="@+id/tv_content_video_collection"
+        android:textSize="@dimen/text_size_scheduler_title_small"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_title_video_collection"
+        app:layout_constraintTop_toTopOf="@id/tv_title_video_collection"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_video_collection"
+        android:layout_marginLeft="@dimen/margin"/>
+
+</android.support.constraint.ConstraintLayout>

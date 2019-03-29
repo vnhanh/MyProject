@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment_home.HomeFragment">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view_promo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/thumbnail_video_promo"
+        android:background="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/player_view_promo"
+        app:layout_constraintEnd_toEndOf="@id/player_view_promo"
+        app:layout_constraintTop_toTopOf="@id/player_view_promo"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_promo"/>
+
+    <ProgressBar
+        android:id="@+id/prg_bar_video_promo"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/player_view_promo"
+        app:layout_constraintEnd_toEndOf="@id/player_view_promo"
+        app:layout_constraintTop_toTopOf="@id/player_view_promo"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_promo"/>
+
+    <Button
+        android:id="@+id/btn_get_started_schedulers"
+        android:text="@string/btn_title_get_started"
+        android:background="@drawable/bg_rectangle_blue_corner_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_get_started_no_schedulers"
+        app:layout_constraintVertical_bias="0.9"
+        android:padding="@dimen/margin"/>
+
+    <Button
+        android:id="@+id/btn_get_started_no_schedulers"
+        android:text="@string/btn_title_get_started_no_schedulers"
+        android:background="@drawable/bg_rectangle_blue_corner_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/margin"/>
+
+</android.support.constraint.ConstraintLayout>

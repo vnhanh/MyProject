@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">MoveMind</string>
+
+    <string name="btn_title_get_started">GET STARTED</string>
+    <string name="btn_title_get_started_no_schedulers">GET STARTED NO SCHEDULERS</string>
+    <string name="btn_title_view_time_table">View Time Table</string>
+    <string name="btn_title_skip_search">Skip &amp; Search</string>
+    <string name="btn_title_help_me_choose">Help Me Choose</string>
+    <string name="btn_title_choose_move123">MOVE 123</string>
+    <string name="btn_title_choose_mind123">MIND 123</string>
+
+    <string name="tv_title_now_playing">NOW PLAYING</string>
+    <string name="tv_title_upcoming">COMING UP NEXT</string>
+
+    <!--FRAGMENT TIME TABLE-->
+    <string name="title_today">TODAY</string>
+    <string name="title_tomorrow">TOMORROW</string>
+    <string name="title_btn_back_screen_now_playing">BACK TO NOW PLAYING</string>
+    <string name="title_language_english">EN</string>
+    <string name="title_instructor_normal">Instructor:</string>
+    <string name="title_duration_normal">Duration:</string>
+    <string name="title_collection_normal">Collection:</string>
+    <string name="title_level_normal">Level:</string>
+
+    <!--FRAGMENT SEARCH VIDEOS-->
+    <string name="title_search_video">SEARCH VIDEO</string>
+    <string name="btn_title_search_by_instructor">INSTRUCTOR</string>
+    <string name="btn_title_search_by_duration">DURATION</string>
+    <string name="btn_title_search_by_level">LEVEL</string>
+    <string name="btn_title_search_by_collection">COLLECTION</string>
+    <string name="menu_title_find_class">Find a class</string>
+    <string name="menu_title_collection">Collection</string>
+    <string name="menu_title_time">Time</string>
+    <string name="menu_title_level">Level</string>
+    <string name="btn_title_back">BACK</string>
+    <string name="title_choose_collection_of_">CHOOSE A COLLECTION OF %s</string>
+    <string name="title_choose_a_duration_of_collection">CHOOSE A DURATION OF %s</string>
+    <string name="title_choose_instructor_of_collection">CHOOSE AN INSTRUCTOR OF %s</string>
+    <string name="title_choose_a_level_of_collection">CHOOSE A LEVEL OF %s</string>
+    <string name="title_collection">COLLECTION</string>
+    <string name="title_choose_brand">CHOOSE A BRAND</string>
+    <string name="content_desc_exo_play">This is a play video button</string>
+    <string name="content_desc_exo_pause">This is a pause video button</string>
+    <string name="content_desc_avatar_instructor">This is an avatar instructor</string>
+    <string name="content_desc_menu_icon">This is a menu button</string>
+    <string name="content_desc_volume_button">This is a volume button</string>
+    <string name="content_desc_thumbnail_video_now_playing">This is a thumbnail for now playing video</string>
+    <string name="content_desc_thumbnail_video_upcoming">This is a thumbnail upcoming video</string>
+    <string name="content_desc_thumbnail_video_scheduler">This is a thumbnail for scheduler video from timetable</string>
+    <string name="content_desc_button_show_info_instructor">This is a button showing information of an instructor</string>
+    <string name="title_instructor">INSTRUCTOR</string>
+    <string name="btn_title_back_to_search">BACK TO SEARCH</string>
+    <string name="title_duration">DURATION</string>
+    <string name="title_level">LEVEL</string>
+
+    <!--FRAGMENT RESULTS SEARCH VIDEOS-->
+    <string name="title_video_number_results">Video (%s)</string>
+    <string name="btn_label_play">PLAY</string>
+    <string name="minutes">MINUTES</string>
+    <string name="content_desc_image_preview_video">This is a preview video</string>
+    <string name="content_desc_icon_checked">This is a checked icon</string>
+
+    <!--FRAGMENT HELP ME CHOOSE-->
+    <string name="title_help_me_choose">HELP ME CHOOSE</string>
+    <string name="btn_title_back_to_skip_search">Skip &amp; Search</string>
+    <string name="title_today_i_feel_like">TODAY I FEEL LIKE…</string>
+    <string name="title_i_wanna_focus_on_my_">I WANNA FOCUS ON MY&#8230;</string>
+    <string name="title_i_am_a_level">I THINK I AM A&#8230;</string>
+    <string name="title_today_i_have_minutes">TODAY I HAVE…</string>
+
+</resources>

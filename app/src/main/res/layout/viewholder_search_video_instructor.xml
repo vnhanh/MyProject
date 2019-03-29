@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="@dimen/marginx2"
+    android:background="@drawable/bg_circle_white_border_dark_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_instructor_avatar"
+        android:src="@drawable/gym_instructor_crop"
+        android:contentDescription="@string/content_desc_avatar_instructor"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_show_info"
+        app:srcCompat="@drawable/ic_info_black_24dp"
+        android:contentDescription="@string/content_desc_button_show_info_instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/img_instructor_avatar"
+        app:layout_constraintStart_toEndOf="@id/img_instructor_avatar"
+        android:padding="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tv_instructor_name"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Unknown"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_instructor_avatar"
+        android:layout_marginTop="@dimen/margin"/>
+
+</android.support.constraint.ConstraintLayout>

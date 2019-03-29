@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="marginx2">16dp</dimen>
+    <dimen name="marginx4">32dp</dimen>
+    <dimen name="marginx3">24dp</dimen>
+
+    <dimen name="text_size_slash_options_time_table">20sp</dimen>
+    <dimen name="text_size_title_helper_item">20sp</dimen>
+
+    <!--FRAGMENT TIME TABLE-->
+    <dimen name="time_table_text_size_expanded_title">16sp</dimen>
+    <dimen name="time_table_text_size_normal_title">14sp</dimen>
+    <dimen name="margin_left_from_parent_to_slash_view">80dp</dimen>
+    <dimen name="margin_right_from_pivot_to_slash_view">28dp</dimen>
+    <dimen name="margin_left_from_pivot_to_slash_view">50dp</dimen>
+    <dimen name="size_scheduler_timer_view">120dp</dimen>
+    <dimen name="width_scheduler_video_image">200dp</dimen>
+    <dimen name="height_scheduler_video_image">100dp</dimen>
+    <dimen name="text_size_scheduler_video_title">16sp</dimen>
+    <dimen name="width_scheduler_viewholder_right_column">240dp</dimen>
+    <dimen name="width_frag_control_seekbar_volume">40dp</dimen>
+    <dimen name="height_frag_control_seekbar_volume">160dp</dimen>
+
+    <!--HELPER FRAGMENT-->
+    <dimen name="text_size_helper_title1">36sp</dimen>
+    <dimen name="text_size_helper_title2">18sp</dimen>
+    <dimen name="size_divider">1dp</dimen>
+    <dimen name="text_size_scheduler_title_small">14sp</dimen>
+
+    <!--SKIP & SEARCH-->
+    <dimen name="size_image_avatar_instructor">140dp</dimen>
+    <dimen name="text_size_instructor_name">18sp</dimen>
+
+    <!--CONTROL FRAGMENT-->
+    <dimen name="text_size_menu">18sp</dimen>
+    <dimen name="text_size_title_videos_results">20sp</dimen>
+    <dimen name="text_size_btn_play">20sp</dimen>
+    <dimen name="size_btn_play">120dp</dimen>
+    <dimen name="text_size_help_me_choose">18sp</dimen>
+    <dimen name="text_size_title_of_item">13sp</dimen>    <!--text size of each item in fragment "Help Me Choose"-->
+    <dimen name="max_height_a_list_help_me_choose">300dp</dimen>
+    <dimen name="size_image_preview_searched_video">100dp</dimen>
+    <dimen name="text_size_title_searched_video">14sp</dimen>
+    <dimen name="text_size_duration_searched_video">12sp</dimen>
+    <dimen name="width_result_searched_video">300dp</dimen>
+
+</resources>

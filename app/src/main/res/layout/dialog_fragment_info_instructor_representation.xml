@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_white_rectangle_border_white_corner"
+    android:padding="@dimen/marginx2">
+
+    <ImageView
+        android:id="@+id/img_instructor_avatar"
+        android:src="@drawable/gym_instructor_crop"
+        android:contentDescription="@string/content_desc_avatar_instructor"
+        android:layout_width="@dimen/size_image_avatar_instructor"
+        android:layout_height="@dimen/size_image_avatar_instructor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_instructor_name"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/text_size_instructor_name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/img_instructor_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/marginx2"/>
+
+    <TextView
+        android:id="@+id/tv_instructor_description"
+        android:text="Fitness professionals screen participants for exercise programs, evaluate various fitness components, prescribe exercise to improve these components, and may also help clients with specific or chronic conditions."
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_instructor_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/marginx2"/>
+
+</android.support.constraint.ConstraintLayout>

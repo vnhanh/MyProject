@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment_time_table.TimeTableFragment">
+
+    <TextView
+        android:id="@+id/tv_time_table_top_options_slash"
+        android:text="/"
+        android:textSize="@dimen/text_size_slash_options_time_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/marginx3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/margin_left_from_parent_to_slash_view"/>
+
+    <View
+        android:id="@+id/view_pivot_left_slash"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_time_table_top_options_slash"
+        app:layout_constraintTop_toTopOf="@id/tv_time_table_top_options_slash"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time_table_top_options_slash"
+        android:layout_marginRight="@dimen/margin_right_from_pivot_to_slash_view"/>
+
+    <View
+        android:id="@+id/view_pivot_right_slash"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toEndOf="@id/tv_time_table_top_options_slash"
+        app:layout_constraintTop_toTopOf="@id/tv_time_table_top_options_slash"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time_table_top_options_slash"
+        android:layout_marginLeft="@dimen/margin_left_from_pivot_to_slash_view"/>
+
+    <TextView
+        android:id="@+id/btn_time_table_today"
+        android:text="@string/title_today"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/view_pivot_left_slash"
+        app:layout_constraintEnd_toEndOf="@id/view_pivot_left_slash"
+        app:layout_constraintTop_toTopOf="@id/tv_time_table_top_options_slash"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time_table_top_options_slash"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/btn_time_table_tomorrow"
+        android:text="@string/title_tomorrow"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/view_pivot_right_slash"
+        app:layout_constraintEnd_toEndOf="@id/view_pivot_right_slash"
+        app:layout_constraintTop_toTopOf="@id/tv_time_table_top_options_slash"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time_table_top_options_slash"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"/>
+
+    <Button
+        android:id="@+id/btn_back_screen_now_playing"
+        android:text="@string/title_btn_back_screen_now_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_time_table_top_options_slash"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time_table_top_options_slash"
+        android:layout_marginRight="@dimen/marginx2"
+        android:layout_marginEnd="@dimen/marginx2"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_scheduler_videos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back_screen_now_playing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/marginx2"
+        android:layout_marginRight="@dimen/marginx2"
+        android:layout_marginStart="@dimen/marginx2"
+        android:layout_marginEnd="@dimen/marginx2"
+        android:layout_marginTop="@dimen/marginx2" />
+
+</android.support.constraint.ConstraintLayout>

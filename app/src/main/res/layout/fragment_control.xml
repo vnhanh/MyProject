@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment_control.ControlFragment">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_control"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/line_break"/>
+
+    <View
+        android:id="@+id/line_break"
+        android:background="@android:color/black"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_menu"
+        android:layout_marginBottom="@dimen/marginx2"/>
+
+    <View
+        android:id="@+id/view_pivot_above_menu"
+        android:visibility="invisible"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_menu"
+        app:layout_constraintBottom_toTopOf="@id/btn_menu"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <ImageView
+        android:id="@+id/btn_menu"
+        app:srcCompat="@drawable/ic_menu_black_48dp"
+        android:contentDescription="@string/content_desc_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/marginx2"
+        android:layout_marginEnd="@dimen/marginx2"
+        android:layout_marginBottom="@dimen/marginx2"/>
+
+    <TextView
+        android:id="@+id/tv_language_change"
+        android:text="@string/title_language_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_menu"
+        android:layout_marginLeft="@dimen/marginx2"
+        android:layout_marginStart="@dimen/marginx2"/>
+
+    <ImageView
+        android:id="@+id/btn_volume"
+        app:srcCompat="@drawable/ic_volume_up_black_36dp"
+        android:contentDescription="@string/content_desc_volume_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_language_change"
+        app:layout_constraintTop_toTopOf="@+id/btn_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_menu"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_volume"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar_thumb"
+        android:layout_width="@dimen/width_frag_control_seekbar_volume"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_volume"
+        android:layout_marginLeft="@dimen/margin"
+        app:layout_constraintTop_toTopOf="@+id/btn_volume"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_volume"/>
+
+</android.support.constraint.ConstraintLayout>
